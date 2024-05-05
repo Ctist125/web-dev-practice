@@ -1,0 +1,24 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+    This website uses the 'Nanum Gothic'font, designed by Sandoll Communication, licensed under the SIL Open Font License, Version 1.1.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles/share.css" />
+
+  <% if (pageTitle === "Main Page") { %>
+    <link rel="stylesheet" href="styles/styles.css" />
+  <% } else if (pageTitle === "Success" || pageTitle === "Error") { %>
+    <link rel="stylesheet" href="styles/success.css" />
+  <% } %>
+
+  <title><%= pageTitle %></title>
+</head>

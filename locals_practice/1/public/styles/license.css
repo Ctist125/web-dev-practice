@@ -1,0 +1,7 @@
+main {
+  height: 35.5rem;
+}
+
+h2 {
+  margin: var(--size-margin-top-bottom-medium);
+}

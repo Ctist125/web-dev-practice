@@ -1,0 +1,45 @@
+html {
+  --color-gray-600: rgb(60, 60, 60);
+
+  --color-beige-300: #f0edcc;
+
+  --color-tuequoise-800: #02343f;
+
+  --space-input-small: 0.25rem;
+
+  --space-medium: 1rem;
+
+  --font-size-small: 1rem;
+
+  color: var(--color-gray-600);
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  background-color: var(--color-beige-300);
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: var(--color-tuequoise-800);
+  color: var(--color-beige-300);
+  padding: var(--space-medium) 0;
+}
+
+footer {
+  background-color: var(--color-tuequoise-800);
+  color: var(--color-beige-300);
+  padding: var(--space-medium) 0;
+}
+
+footer a {
+  color: var(--color-beige-300);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}

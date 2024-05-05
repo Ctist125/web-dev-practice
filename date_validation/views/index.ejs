@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Main Page" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Main Page" }) %>
+
+    <main>
+      <form action="/date" method="POST">
+        <label for="dateValue">생년월일</label>
+        <input type="date" name="dateValue" id="dateValue" require />
+        <button type="submit">제출</button>
+      </form>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

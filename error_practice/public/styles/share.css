@@ -1,0 +1,60 @@
+html {
+  --color-gray-600: rgb(60, 60, 60);
+
+  --color-mint-600: #acc7b4;
+
+  --color-purple-800: #331b3f;
+  --color-purple-900: #1e0a28;
+
+  --small-space-height: 0.5rem;
+
+  --small-space-width: 1rem;
+
+  --small-radius: 0.25rem;
+
+  font-family: "Nanum Gothic", sans-serif;
+  color: var(--color-gray-600);
+}
+
+body {
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: var(--color-mint-600);
+  padding: 0.5rem 0;
+}
+
+header h1 {
+  color: var(--color-purple-800);
+}
+
+main {
+  height: 35rem;
+}
+
+input,
+.btn {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 700;
+  color: var(--color-gray-600);
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--color-purple-800);
+  color: var(--color-mint-600);
+  text-decoration: none;
+  padding: var(--small-space-height) var(--small-space-width);
+  border: 1px solid var(--color-purple-800);
+  border-radius: var(--small-radius);
+}
+
+.btn:hover {
+  background-color: var(--color-purple-900);
+}
+
+footer {
+  border-top: 1px solid var(--color-gray-600);
+}

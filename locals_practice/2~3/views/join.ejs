@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("includes/head", { pageTitle: "회원가입" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "회원가입" }) %>
+
+    <main>
+      <section id="login-input">
+        <form action="/join" method="POST">
+          <ul>
+            <li>
+              <label for="join-id">ID</label>
+              <input type="text" id="join-id" name="joinId" placeholder="ID" require />
+            </li>
+            <li>
+              <label for="join-passwd">Password</label>
+              <input
+                type="password"
+                id="join-passwd"
+                name="joinPasswd"
+                placeholder="Password"
+                require
+              />
+            </li>
+            <li>
+              <label for="join-passwd-check">Password 확인</label>
+              <input
+                type="password"
+                id="join-passwd-check"
+                name="joinPasswdCheck"
+                placeholder="Password 확인"
+                require
+              />
+            </li>
+            <li id="agree-check-box">
+              <input type="checkbox" id="agree" name="agree" required />
+              <label for="agree">약관에 동의합니다.</label>
+            </li>
+            <li>
+              <button class="btn" type="submit">회원가입</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

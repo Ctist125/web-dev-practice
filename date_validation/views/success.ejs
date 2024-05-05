@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Success" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Success!" }) %>
+
+    <main>
+      <h2>당신의 생년월일은 <%= birthday[0] %> 년 <%= birthday[1] %> 월 <%= birthday[2] %> 일입니다.</h2>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

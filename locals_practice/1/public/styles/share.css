@@ -1,0 +1,60 @@
+html {
+  --color-gray-300: #a2a2a1;
+  --color-gray-700: rgb(60, 60, 60);
+
+  --color-blue-500: #195190;
+
+  --size-margin-top-bottom-small: 0.5rem;
+  --size-margin-top-bottom-medium: 1rem;
+
+  --size-padding-top-bottom-medium: 1rem;
+
+  font-family: "Nanum Gothic", sans-serif;
+  color: var(--color-gray-700);
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--color-gray-300);
+  color: var(--color-blue-500);
+  padding: var(--size-padding-top-bottom-medium) 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 800;
+}
+
+footer {
+  background-color: var(--color-gray-300);
+  color: var(--color-blue-500);
+  padding: var(--size-padding-top-bottom-medium) 0;
+}
+
+footer p {
+  font-weight: 700;
+  margin: 0;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-blue-500);
+  margin-top: var(--size-margin-top-bottom-small);
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

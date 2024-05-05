@@ -1,0 +1,18 @@
+{
+  "name": "date_validation",
+  "version": "1.0.0",
+  "description": "date validation study",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Tief",
+  "license": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

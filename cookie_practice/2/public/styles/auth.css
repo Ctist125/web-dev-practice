@@ -1,0 +1,71 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 30rem;
+}
+
+#auth {
+  background-color: var(--color-ivory-200);
+  width: var(--size-card-width);
+  margin: 0 auto;
+  padding: var(--size-padding-large);
+  border-radius: var(--border-radius-basic);
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#auth ul {
+  list-style: none;
+  padding: 0;
+}
+
+#auth li {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  align-items: center;
+  margin-bottom: var(--size-margin-basic);
+}
+
+#auth label {
+  color: var(--color-skyblue-400);
+  font-size: var(--size-font-large);
+  font-weight: 700;
+}
+
+#auth input {
+  padding: var(--size-padding-small);
+  border: 1px solid var(--color-gray-600);
+  border-radius: var(--border-radius-small);
+  font: 400 1rem "Nanum Gothic", sans-serif;
+}
+
+#auth #agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#auth #btn-list {
+  display: block;
+}
+
+#menu ul {
+  width: var(--size-card-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--color-gray-600);
+}
+
+#menu a:hover,
+#menu a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}

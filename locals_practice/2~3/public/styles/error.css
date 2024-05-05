@@ -1,0 +1,9 @@
+main {
+  height: 36.5rem;
+  justify-content: center;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}

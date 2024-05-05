@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Main page" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "방문자 수 체크" }) %>
+
+    <main>
+      <section id="visitor-cnt">
+        <h2>현재 방문자 누적 수는?</h2>
+        <div>
+          <p><%= locals.cnt %> 명</p>
+        </div>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Join" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Join" }) %>
+
+    <main>
+      <form action="/join" method="POST">
+        <ul>
+          <li class="input_text">
+            <label for="joinId">ID</label>
+            <input
+              type="text"
+              id="joinId"
+              name="joinId"
+              minlength="3"
+              maxlength="15"
+              placeholder="ID"
+              required
+            />
+          </li>
+          <li class="input_text">
+            <label for="joinPasswd">Password</label>
+            <input
+              type="password"
+              id="joinPasswd"
+              name="joinPasswd"
+              minlength="8"
+              maxlength="20"
+              placeholder="Password"
+              required
+            />
+          </li>
+          <li class="input_text">
+            <label for="passwdCheck">Password Check</label>
+            <input
+              type="password"
+              id="passwdCheck"
+              name="passwdCheck"
+              minlength="8"
+              maxlength="20"
+              placeholder="Password Check"
+              required
+            />
+          </li>
+          <li>
+            <button class="btn" type="submit">가입</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

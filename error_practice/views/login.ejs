@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Login" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Login" }) %>
+
+    <main>
+      <form action="" method="POST">
+        <ul>
+          <li class="input_text">
+            <label for="userId">ID</label>
+            <input type="text" id="userId" name="userId" placeholder="ID" required />
+          </li>
+          <li class="input_text">
+            <label for="userPasswd">Password</label>
+            <input type="password" id="userPasswd" name="userPasswd" placeholder="Password" required />
+          </li>
+          <li>
+            <button class="btn" type="submit">Login</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

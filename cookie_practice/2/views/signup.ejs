@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Sign up" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Sign up" }) %>
+
+    <main>
+      <section id="auth">
+        <form action="/signup" method="POST">
+          <ul>
+            <li>
+              <label for="new-id">ID</label>
+              <input type="text" id="new-id" name="newId" placeholder="ID" required />
+            </li>
+            <li>
+              <label for="new-passwd">Password</label>
+              <input
+                type="password"
+                id="new-passwd"
+                name="newPasswd"
+                placeholder="Password"
+                required
+              />
+            </li>
+            <li>
+              <label for="passwd-check">Password 확인</label>
+              <input
+                type="password"
+                id="passwd-check"
+                name="passwdCheck"
+                placeholder="password 확인"
+                required
+              />
+            </li>
+            <li id="agree">
+              <input type="checkbox" id="agree" name="agree" required />
+              <label for="agree">약관에 동의합니다.</label>
+            </li>
+            <li id="btn-list">
+              <button class="btn" type="submit">Sign up</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>
