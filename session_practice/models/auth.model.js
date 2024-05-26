@@ -1,6 +1,3 @@
-// 외부 라이브러리
-const mongodb = require("mongodb");
-
 // 프로젝트 내부 파일
 const db = require("../data/database");
 
