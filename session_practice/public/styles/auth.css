@@ -1,0 +1,56 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35rem;
+}
+
+#input-form {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+#input-form ul {
+  background-color: var(--color-mint-600);
+  width: var(--size-card-small);
+  padding: var(--size-padding-large);
+  border: none;
+  border-radius: var(--border-radius-basic);
+}
+
+input,
+.btn {
+  margin-top: var(--size-padding-small);
+  box-sizing: border-box;
+}
+
+input {
+  padding: var(--size-padding-xsmall);
+  border: 3px solid var(--color-gray-400);
+  font: 400 var(--size-font-basic) "Nanum Gothic", sans-serif;
+  width: 100%;
+  border-radius: var(--border-radius-basic);
+}
+
+#menu {
+  width: var(--size-card-small);
+  margin: 0 auto;
+}
+
+#menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu a {
+  color: var(--color-gray-600);
+  text-decoration: none;
+}
+
+#menu a:hover,
+#menu a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}

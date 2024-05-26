@@ -2,7 +2,7 @@
 const Auth = require("../models/auth.model");
 
 function getLogin(req, res) {
-  if (req.cookies.auth.id) {
+  if (req.cookies.auth) {
     return res.render("success", { userId: req.cookies.auth.id });
   }
 
