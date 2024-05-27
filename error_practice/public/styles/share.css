@@ -1,60 +1,63 @@
 html {
-  --color-gray-600: rgb(60, 60, 60);
+  --color-black-700: #2d2926;
 
-  --color-mint-600: #acc7b4;
+  --color-pink-500: #ed6f63;
+  --color-pink-600: #ce5c52;
 
-  --color-purple-800: #331b3f;
-  --color-purple-900: #1e0a28;
+  --size-padding-large: 1.25rem;
 
-  --small-space-height: 0.5rem;
+  --size-font-large: 1.25rem;
 
-  --small-space-width: 1rem;
+  --size-button-width: 10rem;
 
-  --small-radius: 0.25rem;
+  --size-bar-width: 0.5rem;
+  --size-bar-height: 10rem;
 
   font-family: "Nanum Gothic", sans-serif;
-  color: var(--color-gray-600);
 }
 
 body {
-  text-align: center;
   margin: 0;
 }
 
 header {
-  background-color: var(--color-mint-600);
-  padding: 0.5rem 0;
+  color: var(--color-pink-500);
+  background-color: var(--color-black-700);
+  padding: var(--size-padding-large);
 }
 
-header h1 {
-  color: var(--color-purple-800);
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  text-align: center;
+  width: var(--size-button-width);
+}
+
+header li a {
+  font-size: var(--size-font-large);
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--color-pink-500);
+}
+
+header li a:hover,
+header li a:active {
+  color: var(--color-pink-600);
+}
+
+header li h1 {
+  margin: 0;
 }
 
 main {
-  height: 35rem;
-}
-
-input,
-.btn {
-  font-family: "Nanum Gothic", sans-serif;
-  font-weight: 700;
-  color: var(--color-gray-600);
-}
-
-.btn {
-  cursor: pointer;
-  background-color: var(--color-purple-800);
-  color: var(--color-mint-600);
-  text-decoration: none;
-  padding: var(--small-space-height) var(--small-space-width);
-  border: 1px solid var(--color-purple-800);
-  border-radius: var(--small-radius);
-}
-
-.btn:hover {
-  background-color: var(--color-purple-900);
-}
-
-footer {
-  border-top: 1px solid var(--color-gray-600);
+  background-color: var(--color-pink-500);
+  color: var(--color-black-700);
 }

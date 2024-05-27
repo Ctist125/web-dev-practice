@@ -1,4 +1,10 @@
-ul {
-  list-style: none;
-  padding: 0;
+#description {
+    width: 40rem;
+    margin: 0 auto;
+}
+
+#vertical-bar {
+    background-color: var(--color-black-700);
+    width: var(--size-bar-width);
+    height: var(--size-bar-height);
 }

@@ -1,40 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <%- include("includes/head", { pageTitle: "Main page" }) %>
+  <%- include("includes/head", { pageTitle: "Collection of errors" }) %>
 
   <body>
     <%- include("includes/header", { headerTitle: "Main" }) %>
 
     <main>
-      <h2>This is main page.</h2>
-
-      <section id="birthday_input">
-        <form action="/birthday" method="POST">
-          <label for="birthday">생년월일</label>
-          <input
-            type="date"
-            id="birthday"
-            name="birthday"
-            min="<%= minYear %>-01-01"
-            max="<%= standardYear %>-<%= standardMonth %>-<%= standardDay %>"
-            required
-          />
-          <button class="btn" type="submit">제출</button>
-        </form>
-      </section>
-
-      <hr />
-
-      <section id="page_menu">
-        <ul>
-          <li>
-            <a class="btn" href="/login">Login</a>
-            <a class="btn" href="/join">회원가입</a>
-          </li>
-        </ul>
+      <section id="description">
+        <div id="vertical-bar"></div>
+        <h2>에러에 대해 실습을 진행한 웹 사이트 입니다.</h2>
       </section>
     </main>
-
-    <%- include("includes/footer") %>
   </body>
 </html>
