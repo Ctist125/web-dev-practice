@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "npm-check-updates": "^16.14.20"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "name": "practice1",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Tief",
+  "license": "",
+  "description": ""
+}

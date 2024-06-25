@@ -1,28 +1,42 @@
 html {
   --color-black-700: #2d2926;
+  --color-black-800: #1f1e1d;
 
   --color-pink-500: #ed6f63;
   --color-pink-600: #ce5c52;
 
-  --size-padding-large: 1.25rem;
+  --size-margin-basic: 1rem;
 
+  --size-padding-xsmall: 0.25rem;
+  --size-padding-small: 0.5rem;
+  --size-padding-basic: 1rem;
+  --size-padding-large: 1.25rem;
+  --size-padding-xlarge: 2.5rem;
+
+  --size-font-basic: 1rem;
   --size-font-large: 1.25rem;
+
+  --size-card-width-medium: 30rem;
+  --size-card-width-large: 40rem;
+
+  --size-border-radius-xsmall: 0.25rem;
+  --size-border-radius-basic: 1rem;
 
   --size-button-width: 10rem;
 
-  --size-bar-width: 0.5rem;
-  --size-bar-height: 10rem;
+  --size-verticalbar-width: 0.5rem;
+  --size-verticalbar-height: 10rem;
 
   font-family: "Nanum Gothic", sans-serif;
 }
 
 body {
   margin: 0;
+  background-color: var(--color-black-700);
 }
 
 header {
   color: var(--color-pink-500);
-  background-color: var(--color-black-700);
   padding: var(--size-padding-large);
 }
 
@@ -60,4 +74,49 @@ header li h1 {
 main {
   background-color: var(--color-pink-500);
   color: var(--color-black-700);
+}
+
+input {
+  padding: var(--size-padding-xsmall);
+  color: var(--color-black-700);
+  border: 1px solid var(--color-black-700);
+  border-radius: var(--size-border-radius-xsmall);
+  font: 400 var(--size-font-large) "Nanum Gothic", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  color: var(--color-pink-500);
+  background-color: var(--color-black-700);
+  width: var(--size-button-width);
+  padding: var(--size-padding-small) 0;
+  border: 1px solid var(--color-black-700);
+  border-radius: var(--size-border-radius-basic);
+  font: 700 var(--size-font-large) "Nanum Gothic", sans-serif;
+}
+
+button:hover,
+button:active {
+  background-color: var(--color-black-800);
+}
+
+footer {
+  color: var(--color-pink-500);
+}
+
+footer ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: var(--color-pink-500);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+  font-weight: 800;
+  text-decoration: underline;
 }

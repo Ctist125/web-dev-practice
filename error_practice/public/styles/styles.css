@@ -1,10 +1,23 @@
 #description {
-    width: 40rem;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: var(--size-card-width-large);
+  margin: 0 auto;
+  padding: 15rem 0;
+}
+
+#description ul {
+  list-style: none;
+  padding: 0 var(--size-padding-basic);
+  width: 100%;
+}
+
+#description p {
+  text-align: end;
 }
 
 #vertical-bar {
-    background-color: var(--color-black-700);
-    width: var(--size-bar-width);
-    height: var(--size-bar-height);
+  background-color: var(--color-black-700);
+  width: var(--size-verticalbar-width);
+  height: var(--size-verticalbar-height);
 }

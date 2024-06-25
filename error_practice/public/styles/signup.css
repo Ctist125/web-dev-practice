@@ -1,0 +1,9 @@
+main {
+  padding: 7.5rem 0;
+}
+
+#input-form .description {
+  display: block;
+  font-size: var(--size-font-basic);
+  font-weight: 400;
+}

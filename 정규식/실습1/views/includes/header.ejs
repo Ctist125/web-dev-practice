@@ -1,0 +1,21 @@
+<header>
+  <ul>
+    <% if (headerTitle === "List") { %>
+      <li class="blank"></li>
+    <% } else { %>
+      <li><a href="/">메인</a></li>
+    <% } %>
+    
+    <li>
+      <h1><%= headerTitle %></h1>
+    </li>
+
+    <% if (headerTitle === "List") { %>
+      <li>
+        <a href="/writing">글쓰기</a>
+      </li>
+    <% } else { %>
+      <li class="blank"></li>
+    <% } %>
+  </ul>
+</header>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("../includes/head", { pageTitle: "Sign up" }) %>
+
+  <body>
+    <%- include("../includes/header", { headerTitle: "Sign up" }) %>
+
+    <main>
+      <section id="input-form">
+        <form action="/auth/sign-up" method="POST">
+          <ul>
+            <li>
+              <label for="new-id">ID</label>
+              <input
+                type="text"
+                id="new-id"
+                name="newId"
+                placeholder="ID"
+                value="<%= inputData.inputId %>"
+              />
+            </li>
+            <li class="description">
+              <% if (errorMessage.idError) { %>
+                <p>
+                  <%= errorMessage.idError %>
+                </p>
+              <% } else { %>
+                <p>
+                  ID는 5자 이상 15자 이하의 영문자와 숫자가 포함되도록 해주십시오.
+                </p>
+              <% } %>
+            </li>
+            <li>
+              <label for="new-passwd">Password</label>
+              <input
+                type="password"
+                id="new-passwd"
+                name="newPasswd"
+                placeholder="Password"
+                value="<%= inputData.inputPasswd %>"
+                required
+              />
+            </li>
+            <li class="description">
+              <p>
+                Password는 8자 이상 20자 이하의 대문자와 소문자를 포함하고,
+                숫자와 특수문자를 포함해 주십시오.
+              </p>
+            </li>
+            <li>
+              <label for="passwd-check">Password 확인</label>
+              <input
+                type="password"
+                id="passwd-check"
+                name="passwdCheck"
+                placeholder="Password 확인"
+                value="<%= inputData.inputPasswdCheck %>"
+                required
+              />
+            </li>
+            <li class="description"></li>
+            <li id="checkbox-list">
+              <input type="checkbox" id="agree" name="agree" value="true" <%= inputData.inputCheckBox %> required />
+              <label for="agree">약관에 동의합니다.</label>
+            </li>
+            <li id="button-list">
+              <button type="submit">회원가입</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("../includes/footer") %>
+  </body>
+</html>

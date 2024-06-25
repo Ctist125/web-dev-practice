@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: var(--size-fullScreen-top);
+}
+
+#tag ul {
+  list-style: none;
+  padding: 0;
+}
+
+#tag li {
+  text-align: center;
+}
+
+#tagList {
+  display: flex;
+}
+
+.tagItem {
+    margin: 0 var(--size-space-small);
+}
+
+#text p {
+  white-space: pre-wrap;
+  text-align: center;
+}

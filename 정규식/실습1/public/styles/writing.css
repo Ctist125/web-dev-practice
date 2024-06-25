@@ -1,0 +1,44 @@
+#input-form {
+  background-color: var(--color-gray-100);
+  border-radius: var(--border-radius-large);
+  width: var(--size-card-large);
+  margin: 2.5rem auto 0 auto;
+}
+
+#input-form ul {
+  list-style: none;
+  padding: var(--size-space-basic);
+}
+
+#input-form li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--size-space-basic);
+}
+
+#input-form label {
+  font-size: var(--size-font-large);
+  font-weight: 700;
+  color: var(--color-gray-600);
+  margin-bottom: var(--size-space-small);
+}
+
+#input-form input,
+#input-form textarea {
+  font-family: "Nanum Gothic", sans-serif;
+  padding: var(--size-space-small);
+  border: 1px solid var(--color-gray-500);
+  border-radius: var(--border-radius-large);
+}
+
+#input-form textarea {
+  resize: none;
+}
+
+#input-form #title {
+  font-size: var(--size-font-xlarge);
+}
+
+#input-form #contents {
+  font-size: var(--size-font-large);
+}

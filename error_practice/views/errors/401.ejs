@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("../includes/head", { pageTitle: "Error" }) %>
+
+  <body>
+    <%- include("../includes/header", { headerTitle: "401" }) %>
+
+    <main>
+      <ul>
+        <li>
+          <h2>인증 필요.</h2>
+        </li>
+        <li>
+          <p>
+            사용자 인증(Login)이 되어 있지 않습니다. 인증 후 다시 이용해
+            주십시오.
+          </p>
+        </li>
+      </ul>
+    </main>
+
+    <%- include("../includes/footer") %>
+  </body>
+</html>

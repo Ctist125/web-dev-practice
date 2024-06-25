@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Post list" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "List" }) %>
+
+    <main>
+      <section id="tagList">
+        <ul>
+          <li><h2>HTML</h2></li>
+          <% for (let htmlList of list.html) { %>
+          <li>
+            <a href="/post/<%= htmlList._id %>"><%= htmlList.title %></a>
+          </li>
+          <% } %>
+        </ul>
+
+        <ul>
+          <li><h2>CSS</h2></li>
+          <% for (let cssList of list.css) { %>
+          <li>
+            <a href="/post/<%= cssList._id %>"><%= cssList.title %></a>
+          </li>
+          <% } %>
+        </ul>
+
+        <ul>
+          <li><h2>JavaScript</h2></li>
+          <% for (let jsList of list.js) { %>
+          <li>
+            <a href="/post/<%= jsList._id %>"><%= jsList.title %></a>
+          </li>
+          <% } %>
+        </ul>
+      </section>
+
+      <section id="allposts">
+        <ul>
+          <li><h2>전체 글</h2></li>
+          <% for (let list of allList) { %>
+          <li>
+            <a href="/post/<%= list._id %>"><%= list.title %></a>
+          </li>
+          <% } %>
+        </ul>
+      </section>
+    </main>
+
+    <%- include("includes/footer", { footerOption: "box" }) %>
+  </body>
+</html>

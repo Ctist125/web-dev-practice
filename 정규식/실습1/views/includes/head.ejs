@@ -14,16 +14,12 @@
 
   <link rel="stylesheet" href="/styles/share.css" />
 
-  <% if (pageTitle === "Collection of errors") { %>
-    <link rel="stylesheet" href="/styles/styles.css" />
-  <% } else if (pageTitle === "Error") { %>
-    <link rel="stylesheet" href="/styles/error.css" />
-  <% } else if (pageTitle === "Login" || pageTitle === "Sign up") { %>
-    <link rel="stylesheet" href="/styles/auth.css" />
-  <% } %>
-
-  <% if (pageTitle === "Sign up") { %>
-    <link rel="stylesheet" href="/styles/signup.css" />
+  <% if (pageTitle === "글쓰기") { %>
+    <link rel="stylesheet" href="/styles/writing.css" />
+  <% } else if (pageTitle === "Post list") { %>
+    <link rel="stylesheet" href="/styles/list.css" />
+  <% } else { %>
+    <link rel="stylesheet" href="/styles/contents.css" />
   <% } %>
 
   <title><%= pageTitle %></title>

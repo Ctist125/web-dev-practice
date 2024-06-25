@@ -1,0 +1,59 @@
+main {
+  background-color: white;
+  padding: 11rem 0;
+}
+
+#input-form {
+  background-color: var(--color-pink-500);
+  width: var(--size-card-width-medium);
+  border-radius: var(--size-border-radius-basic);
+  margin: auto;
+  padding: var(--size-padding-xlarge);
+}
+
+#input-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+#input-form li {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  text-align: center;
+  align-items: center;
+  font-size: var(--size-font-large);
+  font-weight: 700;
+  margin: var(--size-margin-basic) 0;
+}
+
+#input-form #button-list {
+  display: block;
+}
+
+#input-form #checkbox-list {
+  display: flex;
+  justify-content: center;
+}
+
+#login-menu {
+  width: var(--size-card-width-medium);
+  margin: 0 auto;
+}
+
+#login-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+#login-menu a {
+  color: var(--color-black-700);
+  text-decoration: none;
+}
+
+#login-menu a:hover,
+#login-menu a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("../includes/head", { pageTitle: "Login" }) %>
+
+  <body>
+    <%- include("../includes/header", { headerTitle: "Login" }) %>
+
+    <main>
+      <section id="input-form">
+        <form action="/login" method="POST">
+          <ul>
+            <li>
+              <label for="user-id">ID</label>
+              <input type="text" id="user-id" name="userId" placeholder="ID" require />
+            </li>
+            <li>
+              <label for="user-passwd">Password</label>
+              <input
+                type="password"
+                id="user-passwd"
+                name="userPasswd"
+                placeholder="Password"
+                require
+              />
+            </li>
+            <li id="button-list">
+              <button type="submit">Login</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+
+      <section id="login-menu">
+        <ul>
+          <li>
+            <a href="/auth/sign-up">회원가입</a>
+          </li>
+          <li>
+            <a href="">ID/PW 찾기</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <%- include("../includes/footer") %>
+  </body>
+</html>

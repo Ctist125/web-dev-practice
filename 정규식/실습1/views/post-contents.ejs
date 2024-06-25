@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: contents.title }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: contents.title }) %>
+
+    <main>
+        <section id="tag">
+          <ul>
+            <li>
+              <h2>Tag</h2>
+            </li>
+            <% if (contents.tag == "") { %>
+              <li>
+                <p>태그 없음</p>
+              </li>
+            <% } else { %>
+              <li id="tagList">
+              <% for (let tag of contents.tag) { %>
+                <p class="tagItem"><%= tag %></p>
+              <% } %>
+              </li>
+            <% } %>
+          </ul>
+        </section>
+
+        <section id="text">
+          <p><p><%= contents.contents %></p></p>
+        </section>
+    </main>
+
+    <%- include("includes/footer", { footerOption: "box" }) %>
+  </body>
+</html>
