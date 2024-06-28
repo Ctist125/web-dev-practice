@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Sign in" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Sign in" }) %>
+
+    <main>
+      <section class="input-form">
+        <form action="/sign-in" method="POST">
+          <ul>
+            <li>
+              <input
+                type="text"
+                id="user-id"
+                name="userId"
+                placeholder="ID"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                id="user-passwd"
+                name="userPasswd"
+                placeholder="Password"
+                required
+              />
+            </li>
+            <li>
+              <button class="btn" type="submit">Sign in</button>
+            </li>
+            <li>
+              <!--
+                로그인 실패시 에러 구현
+              -->
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer", { footerOption: "" }) %>
+  </body>
+</html>

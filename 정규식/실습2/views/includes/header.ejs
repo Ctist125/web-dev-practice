@@ -1,0 +1,23 @@
+<header>
+  <ul>
+    <% if (headerTitle === "Sign in") { %>
+        <li class="blank-list"></li>
+    <% } else { %>
+        <li>
+            <a href="/">메인 바로가기</a>
+        </li>
+    <% } %>
+
+    <li>
+      <h1><%= headerTitle %></h1>
+    </li>
+
+    <% if (headerTitle === "Sign up") { %>
+        <li class="blank-list"></li>
+    <% } else { %>
+        <li>
+            <a href="/sign-up">Sign up</a>
+        </li>
+    <% } %>
+  </ul>
+</header>

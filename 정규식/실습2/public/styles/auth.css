@@ -1,0 +1,33 @@
+.input-form {
+  display: flex;
+  align-items: center;
+  height: 40rem;
+}
+
+.input-form form {
+  background-color: var(--color-ivory-100);
+  width: var(--size-card-medium);
+  margin: 0 auto;
+  padding: var(--size-space-large);
+  border-radius: var(--size-borderradius-basic);
+  box-shadow: 1px 3px 6px var(--color-shadow);
+}
+
+.input-form li {
+  text-align: center;
+  margin: var(--size-space-basic) 0;
+}
+
+.input-form input {
+  box-sizing: border-box;
+  color: var(--color-gray-600);
+  padding: var(--size-space-xsmall);
+  border: 2px solid var(--color-gray-400);
+  border-radius: var(--size-borderradius-small);
+  font: 400 1.5rem "Nanum Gothic", sans-serif;
+  width: 100%;
+}
+
+.error {
+  color: red;
+}

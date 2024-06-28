@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Sign up" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Sign up" }) %>
+
+    <main>
+      <section class="input-form">
+        <form action="/sign-up" method="POST">
+          <ul>
+            <li>
+              <label for="new-id">ID</label>
+              <input
+                type="text"
+                id="new-id"
+                name="newId"
+                placeholder="ID"
+                value="<%= userId %>"
+                required
+              />
+            </li>
+            <% if (signupErrorSession.idError) { %>
+              <li>
+                <p class="error">ID 생성 조건을 확인해 주십시오.</p>
+              </li>
+            <% } else { %>
+              <li>
+                <p>5자 이상, 15자 이하의 영어 소문자와 숫자를 포함해 주십시오.</p>
+              </li>
+            <% } %>
+
+            <li>
+              <label for="new-passwd">PW</label>
+              <input
+                type="password"
+                id="new-passwd"
+                name="newPasswd"
+                placeholder="Password"
+                required
+              />
+            </li>
+            <% if (signupErrorSession.passwdError) { %>
+              <li>
+                <p class="error">사용할 수 있는 특수문자</p>
+                <p class="error">~, !, @, #, $, %, ^, &, *, (, ), -, _, +, =, {, [, }, :, ;, ", ', ,, ., ?</p>
+              </li>
+            <% } else { %>
+              <li>
+                <p>8자 이상, 20자 이하의 영어 대소문자와 숫자, 특수문자를 포함해 주십시오.</p>
+              </li>
+            <% } %>
+
+            <li>
+              <label for="passwd-check">PW 확인</label>
+              <input
+                type="password"
+                id="passwd-check"
+                name="passwdCheck"
+                placeholder="Password 확인"
+                required
+              />
+            </li>
+            <% if (signupErrorSession.passwdCheckError) { %>
+              <li>
+                <p class="error">Password와 동일하게 입력해 주십시오.</p>
+              </li>
+            <% } else { %>
+              <li>
+                <p>Password와 동일하게 입력해 주십시오.</p>
+              </li>
+            <% } %>
+
+            <li>
+              <button class="btn" type="submit">Sign up</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer", { footerOption: "" }) %>
+  </body>
+</html>

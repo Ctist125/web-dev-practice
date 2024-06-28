@@ -1,0 +1,12 @@
+main {
+  height: 37.5rem;
+}
+
+main ul {
+  list-style: inside;
+  padding: 0 var(--size-space-large);
+}
+
+main h2 {
+  display: inline-block;
+}
