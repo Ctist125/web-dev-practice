@@ -89,8 +89,6 @@ async function signUp(req, res) {
   ) {
     req.session.inputId = userInput.id;
 
-    console.log(req.session.inputId);
-
     return res.redirect("/sign-up");
   } else {
     req.session.destroy();
@@ -111,10 +109,14 @@ function getSuccess(req, res) {
 }
 
 function getAdminPage(req, res) {
-  if (res.locals.admin) {
-    return res.render("admin");
+  if (res.locals.auth) {
+    if (res.locals.admin) {
+      return res.render("admin");
+    } else {
+      return res.status(403).render("errors/403");
+    }
   } else {
-    return res.status(403).render("errors/403");
+    return res.status(401).render("errors/401");
   }
 }
 
