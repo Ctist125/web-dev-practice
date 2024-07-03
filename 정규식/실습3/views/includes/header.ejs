@@ -1,0 +1,23 @@
+<header>
+  <ul>
+    <% if (headerTitle === "Main") { %>
+      <li class="white-space-list"></li>
+    <% } else { %>
+      <li>
+        <a href="/">메인</a>
+      </li>
+    <% } %>
+
+    <li>
+      <h1><%= headerTitle %></h1>
+    </li>
+
+    <% if (headerTitle === "순서") { %>
+      <li class="white-space-list"></li>
+    <% } else { %>
+      <li>
+        <a href="/processing">처리 순서</a>
+      </li>
+    <% } %>
+  </ul>
+</header>

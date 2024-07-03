@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "순서" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "순서" }) %>
+
+    <main>
+      <section id="list">
+        <ol>
+          <% for (list of lists) { %>
+            <li>
+              <p><%= list.phone %>, <%= list.email %></p>
+            </li>
+          <% } %>
+        </ol>
+      </section>
+    </main>
+
+    <%- include("includes/footer", { footerOption: "" }) %>
+  </body>
+</html>

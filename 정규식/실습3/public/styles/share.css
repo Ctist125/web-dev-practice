@@ -1,0 +1,116 @@
+html {
+  --color-gray-600: rgb(60, 60, 60);
+
+  --color-purple-300: #e2d0f9;
+
+  --color-green-500: #317773;
+  --color-green-600: #1f5d5a;
+
+  --size-space-small: 0.5rem;
+  --size-space-basic: 1rem;
+  --size-space-large: 1.5rem;
+  --size-space-xlarge: 2rem;
+
+  --size-card-large: 40rem;
+
+  --size-font-basic: 1rem;
+  --size-font-large: 1.5rem;
+
+  --border-radius-small: 0.5rem;
+  --border-radius-basic: 1rem;
+
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--color-purple-300);
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  color: var(--color-green-500);
+  text-align: center;
+  width: 15rem;
+}
+
+header h1 {
+  font-weight: 800;
+}
+
+header a {
+  color: var(--color-green-500);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header a:hover,
+header a:active {
+  color: var(--color-green-600);
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.white-space-list {
+  height: var(--size-space-basic);
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid var(--color-green-500);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-green-500);
+  color: var(--color-purple-300);
+  font: 700 var(--size-font-large) "Nanum Gothic", sans-serif;
+  width: 10rem;
+  padding: var(--size-space-small) 0;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-green-600);
+}
+
+footer {
+  color: var(--color-gray-600);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  text-align: center;
+}
+
+footer a {
+  color: var(--color-gray-600);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+}
+
+#box {
+  color: var(--color-green-500);
+  background-color: var(--color-purple-300);
+  padding: var(--size-space-basic) 0;
+}
+
+#box a {
+  color: var(--color-green-500);
+}

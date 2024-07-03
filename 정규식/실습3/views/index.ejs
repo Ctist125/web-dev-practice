@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Main" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Main" }) %>
+
+    <main>
+      <section id="input-form">
+        <form action="/input-data" method="POST">
+          <ul>
+            <li>
+              <h2>신청서 작성</h2>
+            </li>
+            <li>
+              <textarea
+                name="inputText"
+                id="input-text"
+                rows="20"
+                placeholder="전화번호: 010-0000-0000 &#13;이메일: ID@OOOO.OOO &#13;하고싶은 말"
+                required
+              ></textarea>
+            </li>
+            <li>
+              <button class="btn" type="submit">신청</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer", { footerOption: "" }) %>
+  </body>
+</html>

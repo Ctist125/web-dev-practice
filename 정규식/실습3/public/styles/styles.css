@@ -1,0 +1,27 @@
+#input-form {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: var(--color-green-500);
+  height: 37.5rem;
+}
+
+#input-form ul {
+  background-color: var(--color-purple-300);
+  list-style: none;
+  width: var(--size-card-large);
+  padding: var(--size-space-basic) var(--size-space-xlarge);
+  border-radius: var(--border-radius-basic);
+}
+
+#input-form li {
+  text-align: center;
+  margin: var(--size-space-basic) 0;
+}
+
+textarea {
+  resize: none;
+  box-sizing: border-box;
+  font: 400 var(--size-font-basic) "Nanum Gothic", sans-serif;
+  width: 100%;
+}

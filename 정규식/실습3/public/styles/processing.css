@@ -1,0 +1,12 @@
+#list {
+  background-color: var(--color-purple-300);
+  width: var(--size-card-large);
+  margin: var(--size-space-xlarge) auto;
+  padding: var(--size-space-basic) var(--size-space-xlarge);
+  border-radius: var(--border-radius-basic);
+}
+
+#list li {
+  text-align: center;
+  margin: var(--size-space-large) 0;
+}
