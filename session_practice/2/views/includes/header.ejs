@@ -1,0 +1,15 @@
+<header>
+  <ul>
+    <li id="logo">
+      <a href="/">Main Page</a>
+    </li>
+    <li id="header-menu">
+      <% if (locals.auth) { %>
+        <a href="/log-out">Log out</a>
+      <% } else { %>
+        <a href="/sign-up">Sign up</a>
+        <a href="/sign-in">Sign in</a>
+      <% } %>
+    </li>
+  </ul>
+</header>

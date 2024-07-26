@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("../includes/head", { pageTitle: "Login" }) %>
+
+  <body>
+    <%- include("../includes/header") %>
+
+    <main>
+      <section class="form">
+        <h1>로그인</h1>
+        <form action="" method="POST">
+          <ul>
+            <li>
+              <input
+                type="text"
+                id="user-id"
+                name="userId"
+                placeholder="ID"
+                value="<%= flashData.id %>"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                id="user-pw"
+                name="userPw"
+                placeholder="Password"
+                value="<%= flashData.pw %>"
+                required
+              />
+            </li>
+            <li>
+              <% if (flashData.errorComment) { %>
+                <p class="err"><%= flashData.errorComment %></p>
+              <% } else { %>
+                <br>
+              <% } %>
+            </li>
+            <li>
+              <button class="blue-btn" type="submit">로그인</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("../includes/footer") %>
+  </body>
+</html>

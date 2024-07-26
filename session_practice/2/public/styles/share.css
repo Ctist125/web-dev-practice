@@ -1,0 +1,108 @@
+html {
+  --color-pink-300: #ffdfde;
+
+  --color-blue-300: #6a7ba2;
+  --color-blue-400: #4c5b7c;
+
+  --size-space-xsmall: 0.25rem;
+  --size-space-basic: 1rem;
+  --size-space-large: 1.25rem;
+
+  --size-width-button: 10rem;
+
+  --size-width-laptop: 1024px;
+
+  --size-height-basic: 40rem;
+
+  --size-font-large: 1.75rem;
+  --size-font-xlarge: 2.5rem;
+
+  --border-radius-small: 0.75rem;
+  --border-radius-large: 2rem;
+
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  background-color: var(--color-pink-300);
+  margin: 0;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: var(--size-width-laptop);
+  margin: 0 auto;
+  padding: var(--size-space-basic) 0;
+}
+
+header li {
+  display: inline-block;
+}
+
+header a {
+  color: var(--color-blue-300);
+  text-decoration: none;
+}
+
+#logo a {
+  font-size: var(--size-font-xlarge);
+  font-weight: 800;
+}
+
+#header-menu a {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 var(--size-space-basic);
+}
+
+#header-menu a:hover,
+#header-menu a:active {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.blue-btn {
+  cursor: pointer;
+  color: var(--color-pink-300);
+  background-color: var(--color-blue-300);
+  font: 700 var(--size-font-large) "Nanum Gothic", sans-serif;
+  width: var(--size-width-button);
+  padding: var(--size-space-xsmall) 0;
+  border: 1px solid var(--color-blue-300);
+  border-radius: var(--border-radius-small);
+}
+
+.blue-btn:hover,
+.blue-btn:active {
+  background-color: var(--color-blue-400);
+}
+
+.err {
+  color: red;
+}
+
+footer {
+  color: var(--color-blue-300);
+  text-align: center;
+  font-weight: 700;
+  padding: var(--size-space-basic) 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color-blue-300);
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+  font-weight: 800;
+}

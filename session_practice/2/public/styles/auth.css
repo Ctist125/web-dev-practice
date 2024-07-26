@@ -1,0 +1,35 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--size-height-basic);
+}
+
+main h1 {
+  font-size: var(--size-font-xlarge);
+  font-weight: 800;
+  color: var(--color-blue-300);
+  text-align: center;
+}
+
+main ul {
+  list-style: none;
+  width: 40rem;
+  padding: 0;
+}
+
+main li {
+  margin: var(--size-space-basic);
+  text-align: center;
+}
+
+main input {
+  font: 700 var(--size-font-large) "Nanum Gothic", sans-serif;
+  color: var(--color-blue-300);
+  background-color: var(--color-pink-300);
+  box-sizing: border-box;
+  border: 7.5px solid var(--color-blue-300);
+  border-radius: var(--border-radius-large);
+  width: 100%;
+  padding: var(--size-space-xsmall) var(--size-space-large);
+}

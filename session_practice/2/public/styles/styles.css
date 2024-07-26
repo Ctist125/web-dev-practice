@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-pink-300);
+  background-color: var(--color-blue-300);
+  height: var(--size-height-basic);
+}
+
+main h1 {
+  margin: 0;
+}

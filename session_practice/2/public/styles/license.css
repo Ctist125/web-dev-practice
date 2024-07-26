@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--size-height-basic);
+  background-color: var(--color-blue-300);
+  color: var(--color-pink-300);
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main li {
+  text-align: center;
+}
