@@ -1,0 +1,35 @@
+main {
+  width: var(--size-width-laptop);
+  margin: 0 auto;
+}
+
+main ul {
+  list-style: none;
+  border: 10px solid var(--color-yellow-500);
+  border-radius: var(--border-radius-large);
+  padding: var(--size-space-large);
+}
+
+main li {
+  text-align: center;
+  margin: var(--size-space-basic) 0;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  background-color: var(--color-gray-800);
+  padding: var(--size-space-small);
+  border: 5px solid var(--color-white-100);
+  border-radius: var(--border-radius-small);
+  color: var(--color-white-100);
+  width: 100%;
+}
+
+input {
+  font: 800 var(--size-font-xlarge) "Nanum Gothic", sans-serif;
+}
+
+textarea {
+  font: 400 var(--size-font-basic) "Nanum Gothic", sans-serif;
+}

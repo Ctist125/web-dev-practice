@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-white-100);
+  color: var(--color-gray-600);
+  height: 40rem;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}

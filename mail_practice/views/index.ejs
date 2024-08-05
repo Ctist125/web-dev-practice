@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Main" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Main" }) %>
+
+    <main>
+      <form action="/" method="POST">
+        <ul>
+          <li>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="제목"
+              required
+            />
+          </li>
+          <li>
+            <textarea
+              name="contents"
+              id="contents"
+              placeholder="내용"
+              rows="20"
+              required
+            ></textarea>
+          </li>
+          <li><button class="btn" type="submit">전송</button></li>
+        </ul>
+      </form>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

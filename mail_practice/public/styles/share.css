@@ -1,0 +1,68 @@
+html {
+  --color-white-100: rgb(255, 255, 255);
+
+  --color-yellow-500: rgb(255, 208, 0);
+  --color-yellow-600: rgb(212, 173, 0);
+
+  --color-gray-600: rgb(60, 60, 60);
+  --color-gray-800: rgb(30, 30, 30);
+
+  --size-space-small: 0.5rem;
+  --size-space-basic: 1rem;
+  --size-space-large: 2rem;
+
+  --size-width-laptop: 1024px;
+
+  --size-font-basic: 1rem;
+  --size-font-large: 1.5rem;
+  --size-font-xlarge: 2.5rem;
+
+  --border-radius-xsmall: 0.5rem;
+  --border-radius-small: 0.75rem;
+  --border-radius-large: 1.5rem;
+
+  background-color: var(--color-gray-800);
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+header {
+  text-align: center;
+  color: var(--color-yellow-500);
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--color-gray-800);
+  background-color: var(--color-yellow-500);
+  font: 700 var(--size-font-large) "Nanum Gothic", sans-serif;
+  width: 10rem;
+  padding: var(--size-space-small) 0;
+  border: 1px solid var(--color-yellow-500);
+  border-radius: var(--border-radius-xsmall);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-yellow-600);
+}
+
+footer {
+  color: var(--color-yellow-500);
+}
+
+footer ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: var(--color-yellow-500);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}
