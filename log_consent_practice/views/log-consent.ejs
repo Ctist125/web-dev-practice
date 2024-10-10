@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Log 동의" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Log 수집 동의" }) %>
+
+    <main>
+      <section id="log-form">
+        <form action="/log-consent" method="POST">
+          <ul>
+            <li>
+              <div id="box">
+                <h2>약관 내용 부분</h2>
+              </div>
+            </li>
+            <li id="agreement">
+              <input
+                type="checkbox"
+                id="log-consent"
+                name="logConsent"
+                required
+              />
+              <label for="log-consent">위 약관에 동의합니다.</label>
+            </li>
+            <li>
+              <button class="btn" type="submit">제출</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

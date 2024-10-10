@@ -1,0 +1,25 @@
+{
+  "name": "log_consent_practice",
+  "version": "1.0.0",
+  "description": "log practice",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "log"
+  ],
+  "author": "Tief",
+  "license": "",
+  "dependencies": {
+    "connect-mongodb-session": "^5.0.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.9.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

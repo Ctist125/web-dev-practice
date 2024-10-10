@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Error"}) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Error code: 500" }) %>
+
+    <main>
+      <ul>
+        <li>
+          <h2>서버에 문제가 발생했습니다.</h2>
+        </li>
+        <li>
+          <p>죄송합니다. 빠른 시일 내에 해결하도록 하겠습니다.</p>
+        </li>
+        <li>
+          <a href="/">메인페이지 바로가기</a>
+        </li>
+      </ul>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

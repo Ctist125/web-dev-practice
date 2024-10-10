@@ -1,0 +1,25 @@
+#log-form {
+  width: 100%;
+}
+
+#log-form li {
+  margin: var(--size-space-basic);
+}
+
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--color-gray-600);
+  border-radius: var(--border-radius-basic);
+  width: 40%;
+  height: 20vh;
+  margin: 0 auto;
+}
+
+#agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

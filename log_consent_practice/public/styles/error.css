@@ -1,0 +1,11 @@
+main a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-blue-700);
+  margin: var(--size-space-basic);
+}
+
+main a:hover,
+main a:active {
+  text-decoration: underline;
+}
