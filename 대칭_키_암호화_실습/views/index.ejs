@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include("includes/head", { pageTitle: "Main" }) %>
+
+  <body>
+    <%- include("includes/header", { headerTitle: "Main" }) %>
+
+    <main>
+      <section id="inputForm">
+        <form action="/textInput" method="POST">
+          <ul>
+            <li>
+              <input
+                type="text"
+                id="input-text"
+                name="inputText"
+                placeholder="Text"
+                required
+              />
+            </li>
+            <li>
+              <button type="submit">암호화</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+
+      <section id="result">
+        <ul>
+          <% if (!result) { %>
+            <li>
+              <p>저장된 데이터가 없습니다.</p>
+            </li>
+          <% } else { %>
+            <li>
+              <p>입력 값: <%= result.before %></p>
+            </li>
+            <li>
+              <p>암호화: <%= result.encrypted %></p>
+            </li>
+            <li>
+              <p>복호화: <%= result.decrypted %></p>
+            </li>
+          <% } %>
+        </ul>
+      </section>
+    </main>
+
+    <%- include("includes/footer") %>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+html {
+  --color-gray-100: #f0edcc;
+  --color-gray-500: rgb(50, 50, 50);
+  --color-gray-600: rgb(60, 60, 60);
+
+  --color-blue-800: #02343f;
+  --color-blue-900: #00262e;
+
+  --size-space-small: 0.25rem;
+  --size-space-medium: 1rem;
+
+  --size-font-basic: 1rem;
+
+  --size-border-radius-small: 0.25rem;
+
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  background-color: var(--color-gray-100);
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header h1 {
+  text-align: center;
+  background-color: var(--color-blue-800);
+  color: var(--color-gray-100);
+  font-weight: 800;
+  margin: 0;
+  padding: var(--size-space-medium) 0;
+}
+
+footer {
+  color: var(--color-gray-100);
+  background-color: var(--color-blue-800);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  text-align: center;
+}
+
+footer a {
+  color: var(--color-gray-100);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+  font-weight: 700;
+}
