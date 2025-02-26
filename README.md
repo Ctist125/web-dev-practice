@@ -3,6 +3,7 @@
 ## 사용 언어
 
 - ejs
+- HTML
 - CSS
 - JavaScript
 - nodejs

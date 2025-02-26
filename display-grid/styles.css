@@ -1,0 +1,39 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+#block-1 {
+  background-color: red;
+  grid-column: 1 / 2;
+}
+
+#block-2 {
+  background-color: orange;
+  grid-column: 3 / 4;
+}
+
+#block-3 {
+  background-color: yellow;
+  grid-column: 5 / 6;
+}
+
+#block-4 {
+  background-color: green;
+  grid-column: 2 / 3;
+}
+
+#block-5 {
+  background-color: blue;
+  grid-column: 4 / 5;
+}
