@@ -1,0 +1,86 @@
+html {
+  --color-green-200: #c9eada;
+  --color-green-600: #1a7a4c;
+  --color-green-700: #0f5a35;
+
+  --color-gray-500: rgb(130, 130, 130);
+  --color-gray-600: rgb(60, 60, 60);
+
+  --size-checkbox: 1.25rem;
+
+  --size-font-20: 1.25rem;
+
+  --size-space-8: 0.5rem;
+  --size-space-16: 1rem;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  color: var(--color-gray-600);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  text-align: center;
+  background-color: var(--color-green-200);
+  width: 100%;
+}
+
+header a {
+  display: inline-block;
+  color: var(--color-green-600);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: var(--size-space-16) 0;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color: var(--color-green-600);
+  border: 1px solid var(--color-green-600);
+  border-radius: 1.125rem;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+  font: 700 var(--size-font-20) "Nanum Gothic", sans-serif;
+  width: 6rem;
+  height: 2.25rem;
+  margin: 0 auto;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-green-700);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: var(--color-green-200);
+  padding: var(--size-space-16) 0;
+  width: 100%;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer p {
+  font-weight: 700;
+}
+
+footer a {
+  color: var(--color-gray-600);
+}
+
+footer a:hover,
+footer a:active {
+  font-weight: 700;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      This website uses the 'Nanum Gothic'font, designed by Sandoll Communication, licensed under the SIL Open Font License, Version 1.1.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/share.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Checkbox design</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html">Checkbox design</a>
+    </header>
+
+    <main>
+      <section id="checkbox-list">
+        <form action="./index.html" method="GET">
+          <ul>
+            <li>
+              <span class="designed-checkbox-container">
+                <input type="checkbox" id="checkbox-1" name="checkbox1" />
+                <label for="checkbox-1" class="designed-checkbox"></label>
+              </span>
+              <label for="checkbox-1">Checkbox 1</label>
+            </li>
+            <li>
+              <span class="image-checkbox-container">
+                <input type="checkbox" id="checkbox-2" name="checkbox2" />
+                <label for="checkbox-2">
+                  <img
+                    src="./resources/unchecked.png"
+                    alt="unchecked images"
+                    class="unchecked"
+                  />
+                  <img
+                    src="./resources/checked.png"
+                    alt="checked images"
+                    class="checked"
+                  />
+                </label>
+              </span>
+              <label for="checkbox-2">Checkbox 2</label>
+            </li>
+            <li>
+              <button class="btn" type="submit">제출</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <p>Copyright 2025. Tief. all rights reserved.</p>
+        </li>
+        <li>
+          <a href="./font-license.html">Font license</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

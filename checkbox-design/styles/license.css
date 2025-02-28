@@ -1,0 +1,18 @@
+#header-space {
+  width: 100%;
+  height: 4rem;
+}
+
+#license-contents {
+  width: 1200px;
+  margin: 4rem auto;
+}
+
+#license-contents h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+#license-contents ul {
+    margin: 1rem 0;
+}
