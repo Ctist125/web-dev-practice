@@ -1,0 +1,47 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+#position-absolute-check-container,
+#position-relative-check-container {
+  flex-direction: column;
+}
+
+#relative-and-absolute-test-container {
+  position: relative;
+}
+
+.box-elements {
+  background-color: rgb(33, 33, 33);
+  height: 3rem;
+  width: 10rem;
+  border: 3px solid red;
+  border-radius: 0.5rem;
+}
+
+#sticky-check-element {
+  position: sticky;
+  top: var(--size-space-160);
+}
+
+#absolute-check-element {
+  position: absolute;
+  top: 210vh;
+  left: var(--size-space-80);
+}
+
+#relative-check-element {
+  position: relative;
+  top: var(--size-space-160);
+  left: var(--size-space-80);
+}
+
+#relative-and-absolute-test-element {
+  position: absolute;
+  top: var(--size-space-160);
+  left: var(--size-space-160);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      This website uses the 'Nanum Gothic'font, designed by Sandoll Communication, licensed under the SIL Open Font License, Version 1.1.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/share.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Position practice</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html">Main</a>
+    </header>
+
+    <main>
+      <section id="header-fixed-check-container">
+        <p>header요소의 position: fixed; 확인 section입니다.</p>
+      </section>
+
+      <section id="position-sticky-check-container">
+        <p>
+          div요소에 position: sticky;를 설정해 어떻게 적용되는지 확인하기 위한
+          section입니다.
+        </p>
+        <div id="sticky-check-element" class="box-elements"></div>
+      </section>
+
+      <section id="position-absolute-check-container">
+        <p>
+          div요소에 position: absolute;를 설정해 위치를 지정하는 것을 확인하기
+          위한 section입니다.
+        </p>
+        <div id="absolute-check-element" class="box-elements"></div>
+        <p>position: absolute;의 경우 기존 요소의 위치가 사라집니다.</p>
+      </section>
+
+      <section id="position-relative-check-container">
+        <p>
+          div요소에 position: relative;를 설정해 위치를 지정하는 것을 확인하기
+          위한 section입니다.
+        </p>
+        <div id="relative-check-element" class="box-elements"></div>
+        <p>position: relative;의 경우 기존 요소의 위치가 유지됩니다.</p>
+      </section>
+
+      <section id="relative-and-absolute-test-container">
+        <p>
+          relative로 설정된 section내에 absolute로 설정된 div를 사용한 경우
+          배치를 확인하기 위한 section입니다.
+        </p>
+        <div id="relative-and-absolute-test-element" class="box-elements"></div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="license">
+        <li>
+          <p>Copyright 2025. Tief. all right reserved.</p>
+        </li>
+        <li>
+          <a href="./font-license.html">Font license</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
