@@ -1,0 +1,20 @@
+.input-container {
+  border: 5px solid var(--color-gray-400);
+  border-radius: 1rem;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.input-container input {
+  border: 5px solid var(--color-gray-400);
+  font-size: var(--size-font-24);
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  width: 80%;
+}
+
+.input-container input:focus {
+  border-color: var(--color-gray-600);
+  outline: none;
+}

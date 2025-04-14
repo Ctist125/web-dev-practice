@@ -1,0 +1,23 @@
+{
+  "name": "auth-api",
+  "version": "1.0.0",
+  "description": "Learn the difference between backend and API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Tief",
+  "license": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.15.0"
+  }
+}

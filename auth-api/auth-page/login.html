@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      This website uses the 'Nanum Gothic'font, designed by Sandoll Communication, licensed under the SIL Open Font License, Version 1.1.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/share.css" />
+    <link rel="stylesheet" href="./styles/auth-input.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/login.js" defer></script>
+
+    <title>Login</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Login</h1>
+    </header>
+
+    <main>
+      <section id="login-container" class="input-container">
+        <form id="login-form">
+          <ul>
+            <li>
+              <input
+                type="text"
+                id="user-id"
+                name="userName"
+                placeholder="ID"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                id="user-pw"
+                name="userPw"
+                placeholder="Password"
+                required
+              />
+            </li>
+            <li>
+              <p class="error"></p>
+            </li>
+          </ul>
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </section>
+      <section id="menu-container">
+        <ul>
+          <li>
+            <a href="./sign-up.html">회원가입</a>
+          </li>
+          <li>
+            <a href="./find-pw.html">PW 찾기</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <p>Copyright 2025. Tief. all rights reserved.</p>
+        </li>
+        <li>
+          <a href="./font-license.html">Font license</a>
+        </li>
+      </ul>
+    </footer>    
+  </body>
+</html>

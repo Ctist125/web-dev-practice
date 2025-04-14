@@ -1,0 +1,12 @@
+#menu-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  margin: 0 auto;
+}
+
+#menu-container a:hover,
+#menu-container a:active {
+  font-weight: 700;
+}

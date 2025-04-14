@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      This website uses the 'Nanum Gothic'font, designed by Sandoll Communication, licensed under the SIL Open Font License, Version 1.1.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/share.css" />
+    <link rel="stylesheet" href="./styles/auth-input.css" />
+
+    <script src="./scripts/find-pw.js" defer></script>
+
+    <title>PW 찾기</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>PW 찾기</h1>
+    </header>
+
+    <main>
+      <section id="find-pw-container" class="input-container">
+        <form id="find-id-form">
+          <ul>
+            <li>
+              <input
+                type="text"
+                id="user-id"
+                name="userId"
+                placeholder="ID 입력"
+                required
+              />
+            </li>
+            <li>
+              <p class="error"></p>
+            </li>
+          </ul>
+          <button type="submit" class="btn">찾기</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <p>Copyright 2025. Tief. all rights reserved.</p>
+        </li>
+        <li>
+          <a href="./font-license.html">Font license</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
